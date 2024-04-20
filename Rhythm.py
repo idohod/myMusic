@@ -73,7 +73,4 @@ class Rhythm(object):
         snare = self.temp(info,self.snareArray)
         bass = self.temp(info,self.bassArray)
         info = hh+"\n"+snare+bass
-        return info 
-
-    def check():
-        pass
+        return info     
