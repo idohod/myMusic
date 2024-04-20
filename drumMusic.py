@@ -80,8 +80,6 @@ nums = [1,2,3,4]
 rhythmRepet = secrets.choice(nums)
 
 printIndexes(r1.size)
-
-
 print(r1.rhythmInfo())
 
 path = 'C:/Users/ADMIN/Desktop/myMusic'
