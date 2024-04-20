@@ -9,14 +9,16 @@ class Rhythm(object):
         self.snareArray = []
     
     def randArray(self):
+
         for i in range(self.size):
             if(i == 0 or i == 8):
                   self.rhythmNums.append(1)
             elif(i == 4 or i == 12):
                   self.rhythmNums.append(2)
             else:
-                  self.rhythmNums.append(random.randint(0,2))
+                  self.rhythmNusms.append(random.randint(0,2))
         return 
+
     def checkRandom(self):
         stackNums = [4,8,12]
         for i in range(self.size - 2):
