@@ -9,7 +9,6 @@ class Rhythm(object):
         self.snareArray = []
     
     def randArray(self):
-
         for i in range(self.size):
             if(i == 0 or i == 8):
                   self.rhythmNums.append(1)
