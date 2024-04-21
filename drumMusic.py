@@ -1,7 +1,6 @@
 import secrets
 import os
 from Rhythm import *
-
 from Transition import *
 
 def printIndexes(size):
@@ -72,7 +71,6 @@ def setPermission(chosenFile,files,permission):
     return permission
 
 
-
 r1 = Rhythm()
 r1.randAndSetRhythm()
 
@@ -109,4 +107,3 @@ writeAllTransition(file,t1)
 file.close()
 
 print(t1.TransitionInfo())
-
