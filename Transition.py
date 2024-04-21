@@ -18,45 +18,45 @@ class Transition(object):
                 self.transitionNums.append(random.randint(1,4))
         return
 
-    def setTransition(self,index,Rhythm):
-      for i in range(self.size):
-        if(i < index):
-            self.Tom1Array.append(Rhythm.HHArray[i])
-            self.Tom2Array.append("")
-            self.snareArray.append(Rhythm.snareArray[i])
-            self.floorArray.append(Rhythm.bassArray[i])
-        else:
-            if(self.transitionNums[i] == 1):            
-                self.Tom1Array.append("TOM1")
+    def setTransition(self,index,Rhythm):            
+        for i in range(self.size):
+            if(i < index):
+                self.Tom1Array.append(Rhythm.HHArray[i])
                 self.Tom2Array.append("")
-                self.floorArray.append("")
-                self.snareArray.append("")
-           
-            elif(self.transitionNums[i] == 2):
-                self.Tom1Array.append("")
-                self.Tom2Array.append("")
-                self.floorArray.append("")
-                self.snareArray.append("SNARE")
-
-            elif(self.transitionNums[i] == 3):
-                self.Tom1Array.append("")
-                self.Tom2Array.append("TOM2")
-                self.floorArray.append("")
-                self.snareArray.append("")
-
-            elif(self.transitionNums[i] == 4):
-                self.Tom1Array.append("")
-                self.Tom2Array.append("")
-                self.floorArray.append("FLOOR")
-                self.snareArray.append("")
-
+                self.snareArray.append(Rhythm.snareArray[i])
+                self.floorArray.append(Rhythm.bassArray[i])
             else:
-                self.Tom1Array.append("")
-                self.Tom2Array.append("")
-                self.floorArray.append("") 
-                self.snareArray.append("")
+                 if(self.transitionNums[i] == 1):            
+                        self.Tom1Array.append("TOM1")
+                        self.Tom2Array.append("")
+                        self.floorArray.append("")
+                        self.snareArray.append("")
+           
+                 elif(self.transitionNums[i] == 2):
+                       self.Tom1Array.append("")
+                       self.Tom2Array.append("")
+                       self.floorArray.append("")
+                       self.snareArray.append("SNARE")
 
-      return
+                 elif(self.transitionNums[i] == 3):
+                      self.Tom1Array.append("")
+                      self.Tom2Array.append("TOM2")
+                      self.floorArray.append("")
+                      self.snareArray.append("")
+
+                 elif(self.transitionNums[i] == 4):
+                      self.Tom1Array.append("")
+                      self.Tom2Array.append("")
+                      self.floorArray.append("FLOOR")
+                      self.snareArray.append("")
+
+                 else:
+                      self.Tom1Array.append("")
+                      self.Tom2Array.append("")
+                      self.floorArray.append("") 
+                      self.snareArray.append("")
+
+        return
 
     def temp(self,buffer,arr):
         for i in range(self.size):
